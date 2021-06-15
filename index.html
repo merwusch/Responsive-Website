@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,80 +14,166 @@
 
 
 <body>
-<div class="container">
+
+    <div class="container">
 
 
-    <div class="row">
+        <div class="row">
 
-      <div class="col-lg-8 col-lg-offset-2">
+            <div class="container col-lg-3 bg-transparent border-0 text-white pb-5">
+                <div class="row">
+                    <div class="card">
+                        <d8 class="d8 align-text-top pt-5 pb-3 ps-3 pe-4">LET'S TALK</d8>
 
-        <d8 class="text-primary d8 align-text-top">GET IN TOUCH</d8>
+                        <h2 class="ps-3 pe-4">Speak with Expert Engineers. </h2>
 
-        <h3>Fill The Form Below </h3>
-    
-        <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="card1 mb-3 border-0 bg-transparent ms-3 mt-4">
+                            <div class="row">
+                                <div class="col-md-2 mt-4 ">
 
-        <div class="messages"></div>
+                                    <img 
+                                    src="..." 
+                                    class=""
+                                    alt="...">
 
-        <div class="controls">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h6 class="card-title">E-mail</h6>
+                                        <p class="card-text"> <em>support@merwusch.com</em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_name"></label>
-                <input id="form_name" type="text" name="name" class="form-control bg-grey border-0" placeholder="Name" required="required" data-error="Name is required.">
-                <div class="help-block with-errors"></div>
-              </div>
+
+                        <div class="card1 mb-3 border-0 bg-transparent ms-3">
+                            <div class="row">
+                                <div class="col-md-2 mt-4">
+
+                                    <img 
+                                    src="..."
+                                    class=""
+                                    alt="...">
+
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Phone</h6>
+                                        <p class="card-text"> <em>(123)456-7890</em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card1 mb-3 border-0 bg-transparent ms-3">
+                            <div class="row ">
+                                <div class="col-md-2 mb-5 mt-4">
+
+                                    <img
+                                    src=""
+                                    class=""
+                                    alt="...">
+
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Adress</h6>
+                                        <p class="card-text "> <em>Kartal, 34882, TR</em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_lastname"></label>
-                <input id="form_lastname" type="email" name="email" class="form-control bg-grey border-0" placeholder="E-mail" required="required" data-error="Valid E-mail is required.">
-                <div class="help-block with-errors"></div>
-              </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <d8 class="text-primary d8 align-text-top">GET IN TOUCH</d8>
+
+                <h3>Fill The Form Below </h3>
+
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name"></label>
+                                    <input id="form_name" type="text" name="name"
+                                        class="form-control bg-grey border-0 form-control-sm py-3" placeholder="Name"
+                                        required="required" data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname"></label>
+                                    <input id="form_lastname" type="email" name="email"
+                                        class="form-control bg-grey border-0 form-control-sm py-3" placeholder="E-mail"
+                                        required="required" data-error="Valid E-mail is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email"></label>
+                                    <input id="form_email" type="tel" name="tel"
+                                        class="form-control bg-grey border-0 form-control-sm py-3"
+                                        placeholder="Phone Number" required="required"
+                                        data-error="Phone number is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone"></label>
+                                    <input id="form_phone" type="url" name="url"
+                                        class="form-control bg-grey border-0 form-control-sm py-3"
+                                        placeholder="Your Website">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message"></label>
+                                    <textarea id="form_message" name="message"
+                                        class="form-control bg-grey border-0 form-control-sm py-3"
+                                        placeholder="Your Message" rows="4" required="required"
+                                        data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit"
+                                    class="btn btn-gradiental btn-send rounded-pill text-white px-3 py-3 mt-4 border-0"
+                                    value="Submit Now">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_email"></label>
-                <input id="form_email" type="tel" name="tel" class="form-control bg-grey border-0" placeholder="Phone Number" required="required" data-error="Phone number is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_phone"></label>
-                <input id="form_phone" type="url" name="url" class="form-control bg-grey border-0" placeholder="Your Website">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="form_message"></label>
-                <textarea id="form_message" name="message" class="form-control bg-grey border-0" placeholder="Your Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <input type="submit" class="btn btn-gradiental btn-send rounded-pill text-white px-3 py-3 mt-3 border-0" value="Submit Now">
-            </div>
-          </div>
-          <div class="row">
-            
-          </div>
+
         </div>
-
-        </form>
-
-      </div>
 
     </div>
 
-  </div>
-
     <script src="/js/bootstrap.js"></script>
 </body>
+
 </html>

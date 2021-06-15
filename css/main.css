@@ -6,7 +6,7 @@
         background-image: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
       
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1))
+        background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1));
   }
   .btn-gradiental:hover {
         /* fallback for old browsers */
@@ -27,4 +27,20 @@
     font-size: calc(0.7rem + 0.1vw);
     font-weight: 15;
     line-height: 1.0;
+  }
+
+  .card{
+    background-color: #1b47ad;
+      
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1));
+
+  }
+  .card1{
+      background-color: transparent;
+      width: auto;
+      height: auto;
   }
