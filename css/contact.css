@@ -4,13 +4,16 @@ header {
     background-position-x: center;
     height: 400px;
     background-size: cover;
+    background-position-x: 10%;
+    background-position-y: top;
     font-family: 'Livvic';
 }
 
 footer {
     background-image: url(/img/footer-bg.png);
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: 10%;
+    background-position-y: center;
     height: 400px;
     background-size: cover;
     padding: 50px;

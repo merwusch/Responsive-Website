@@ -1,7 +1,8 @@
 header {
     background-image: url(/img/4.jpg);
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: 10%;
+    background-position-y: top;
     height: 400px;
     background-size: cover;
     font-family: 'Livvic';
@@ -26,6 +27,7 @@ footer {
     background-image: url(/img/footer-bg.png);
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: 10%;
     height: 400px;
     background-size: cover;
     padding: 50px;
@@ -181,4 +183,17 @@ hr1 {
 
 .rounded-square {
     border-radius: 1rem !important;
+}
+
+.blogcard {
+    background-image: url(/img/1.jpg);
+}
+
+.cardd {
+    background-image: image(url(/img/1.jpg));
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
