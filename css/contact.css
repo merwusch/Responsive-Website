@@ -1,0 +1,208 @@
+header {
+    background-image: url(/img/3_2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 400px;
+    background-size: cover;
+    font-family: 'Livvic';
+}
+
+footer {
+    background-image: url(/img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 400px;
+    background-size: cover;
+    padding: 50px;
+}
+
+.footer .footer-top {
+    padding: 92px 0 0 100px;
+}
+
+.footer.p {
+    font-family: 'Livvic-light', sans-serif;
+    font-size: 10px;
+}
+
+.footer.a {
+    font-family: 'Livvic-light';
+}
+
+.footer.h5 {
+    font-family: 'Livvic-bold';
+    font-weight: 600;
+}
+
+.heading-content {
+    top: 100%;
+    width: 100%;
+    max-width: 100%;
+    align-self: center;
+}
+
+.heading-content h5 {
+    font-family: 'Livvic-semibold', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.heading-content p {
+    font-family: 'Livvic-light', sans-serifs;
+    font-size: 1em;
+    font-weight: lighter;
+    color: white;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: 'Livvic-black';
+    src: url(/font/Livvic/Livvic-Black.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-black-italic';
+    src: url(/font/Livvic/Livvic-BlackItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-bold';
+    src: url(/font/Livvic/Livvic-Bold.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-bold-italic';
+    src: url(/font/Livvic/Livvic-BoldItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-extralight';
+    src: url(/font/Livvic/Livvic-ExtraLight.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-extralight-italic';
+    src: url(/font/Livvic/Livvic-ExtraLightItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-italic';
+    src: url(/font/Livvic/Livvic-Italic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-light';
+    src: url(/font/Livvic/Livvic-Light.ttf);
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Livvic-light-italic';
+    src: url(/font/Livvic/Livvic-LightItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-medium';
+    src: url(/font/Livvic/Livvic-Medium.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-medium-italic';
+    src: url(/font/Livvic/Livvic-MediumItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-regular';
+    src: url(/font/Livvic/Livvic-Regular.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-semibold';
+    src: url(/font/Livvic/Livvic-SemiBold.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-semibold-italic';
+    src: url(/font/Livvic/Livvic-SemiBoldItalic.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-thin';
+    src: url(/font/Livvic/Livvic-Thin.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: 'Livvic-thin-italic';
+    src: url(/font/Livvic/Livvic-ThinItalic.ttf);
+    font-weight: 400px;
+}
+
+.btn-gradiental {
+    /* fallback for old browsers */
+    background-color: #1b47ad;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1));
+}
+
+.btn-gradiental:hover {
+    /* fallback for old browsers */
+    background-color: #1b47ad;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to left, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to left, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+}
+
+.bg-grey {
+    background-color: #f6f7f9 !important;
+}
+
+.d8 {
+    font-size: calc(0.9rem + 0.2vw);
+    font-weight: 15;
+    line-height: 1.0;
+}
+
+.card {
+    background-color: #1b47ad;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1));
+}
+
+.card1 {
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+
+.iconic {
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+.text-gradiental {
+    text-decoration-color: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+    ;
+}
