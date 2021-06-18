@@ -1,22 +1,11 @@
 header {
     background-image: url(/img/3_2.jpg);
     background-repeat: no-repeat;
-    background-position-x: center;
     height: 400px;
     background-size: cover;
     background-position-x: 10%;
     background-position-y: top;
-    font-family: 'Livvic';
-}
-
-footer {
-    background-image: url(/img/footer-bg.png);
-    background-repeat: no-repeat;
-    background-position-x: 10%;
-    background-position-y: center;
-    height: 400px;
-    background-size: cover;
-    padding: 50px;
+    font-family: 'Livvic-regular';
 }
 
 .footer .footer-top {
