@@ -8,6 +8,69 @@
     <title>CONTACT</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                    $('#submit').click(function() {
+                                name = $('#form_name').val();
+                                email = $('#form_email').val();
+                                phone = $('#form_phone').val();
+                                website = $('#form_website').val();
+                                password = $('#form_password').val();
+                                gender = $('#form_gender').val();
+                                message = $('#form_message').val();
+
+                                $(document).ready(function() {
+                                            $('#submit').click(function() {
+                                                        name = $('#form_name').val();
+                                                        email = $('#form_email').val();
+                                                        phone = $('#form_phone').val();
+                                                        website = $('#form_website').val();
+                                                        password = $('#form_password').val();
+                                                        gender = $('#form_gender').val();
+                                                        message = $('#form_message').val();
+
+
+                                                        warning = "uyarı";
+
+                                                        $(document).ready(function() {
+                                                                    $('#submit').click(function() {
+                                                                                name = $('#form_name').val();
+                                                                                email = $('#form_email').val();
+                                                                                phone = $('#form_phone').val();
+                                                                                password = $('#form_password').val();
+                                                                                gender = $('#form_gender').val();
+                                                                                message = $('#form_message').val();
+
+                                                                                warning = "";
+
+                                                                                if (name == "")
+                                                                                    warning += "name required";
+                                                                                else if (isim.length < 3) {
+                                                                                    warning += "less then 3 letter!";
+
+                                                                                    if (email == "")
+                                                                                        warning += "email required";
+                                                                                    if (phone == "")
+                                                                                        warning += "phone required";
+                                                                                    if (sifre == "")
+                                                                                        warning += "password required";
+                                                                                    else if (sifre.length < 4) {
+                                                                                        warning += "min long 4";
+                                                                                    }
+                                                                                    if (gender == "")
+                                                                                        warning += "gender required";
+                                                                                    if (message == "")
+                                                                                        warning += "message required";
+
+
+                                                                                    $('.uyari').text(warning);
+
+                                                                                }
+    </script>
+
+
 
 
 </head>
@@ -177,7 +240,7 @@
 
                 <div class=" col-lg-7 col-md-7 col-12 mt-0 mx-auto py-5 px-0 ">
 
-                    <div class=" card1 px-5 mt-2 py-5 ">
+                    <div class=" card1 px-5 ">
                         <d8 class=" text-primary d8 ">GET IN TOUCH</d8>
 
                         <h3 class=" pt-3 ">Fill The Form Below </h3>
@@ -198,8 +261,8 @@
                                     </div>
                                     <div class=" col-md-6 ">
                                         <div class=" form-group ">
-                                            <label for=" form_lastname "></label>
-                                            <input id=" form_lastname " type=" email " name=" email " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" E-mail " required=" required " data-error=" Valid E-mail is required. ">
+                                            <label for=" form_email "></label>
+                                            <input id=" form_email " type=" email " name=" email " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" E-mail " required=" required " data-error=" Valid E-mail is required. ">
                                             <div class=" help-block with-errors "></div>
                                         </div>
                                     </div>
@@ -207,15 +270,31 @@
                                 <div class=" row ">
                                     <div class=" col-md-6 ">
                                         <div class=" form-group ">
-                                            <label for=" form_email "></label>
-                                            <input id=" form_email " type=" tel " name=" tel " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Phone Number " required=" required " data-error=" Phone number is required. ">
+                                            <label for=" form_phone "></label>
+                                            <input id=" form_phone " type=" tel " name=" tel " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Phone Number " required=" required " data-error=" Phone number is required. ">
                                             <div class=" help-block with-errors "></div>
                                         </div>
                                     </div>
                                     <div class=" col-md-6 ">
                                         <div class=" form-group ">
-                                            <label for=" form_phone "></label>
-                                            <input id=" form_phone " type=" url " name=" url " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Your Website ">
+                                            <label for=" form_website "></label>
+                                            <input id=" form_website " type=" url " name=" url " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Your Website ">
+                                            <div class=" help-block with-errors "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" row ">
+                                    <div class=" col-md-6 ">
+                                        <div class=" form-group ">
+                                            <label for=" form_password "></label>
+                                            <input id=" form_password " type=" password " name=" Password " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Password " required=" required " data-error=" Phone number is required. ">
+                                            <div class=" help-block with-errors "></div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-6 ">
+                                        <div class=" form-group ">
+                                            <label for=" form_gender "></label>
+                                            <input id=" form_gender " type=" text " name=" url " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Gender ">
                                             <div class=" help-block with-errors "></div>
                                         </div>
                                     </div>
@@ -229,12 +308,12 @@
                                         </div>
                                     </div>
                                     <div class=" col-md-12 ">
-                                        <input type=" submit " class=" btn btn-gradiental btn-send rounded-pill text-white p-3 mt-4 border-0 " value=" Submit Now ">
+                                        <input type=" button " id="submit" class=" btn btn-gradiental btn-send rounded-pill text-white p-3 mt-4 border-0 " value=" Submit Now ">
                                     </div>
                                 </div>
-                                <div class=" row ">
+                            </div>
 
-                                </div>
+                            <div class="warning" style="color:red;">
                             </div>
 
                         </form>
@@ -274,7 +353,6 @@
     </div>
     <!----------------------Map End---------------------------->
 
-    <script src=" /js/bootstrap.js "></script>
 </body>
 
 <footer id="footer" class="">
