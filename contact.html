@@ -9,70 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-                    $('#submit').click(function() {
-                                name = $('#form_name').val();
-                                email = $('#form_email').val();
-                                phone = $('#form_phone').val();
-                                website = $('#form_website').val();
-                                password = $('#form_password').val();
-                                gender = $('#form_gender').val();
-                                message = $('#form_message').val();
-
-                                $(document).ready(function() {
-                                            $('#submit').click(function() {
-                                                        name = $('#form_name').val();
-                                                        email = $('#form_email').val();
-                                                        phone = $('#form_phone').val();
-                                                        website = $('#form_website').val();
-                                                        password = $('#form_password').val();
-                                                        gender = $('#form_gender').val();
-                                                        message = $('#form_message').val();
-
-
-                                                        warning = "uyarı";
-
-                                                        $(document).ready(function() {
-                                                                    $('#submit').click(function() {
-                                                                                name = $('#form_name').val();
-                                                                                email = $('#form_email').val();
-                                                                                phone = $('#form_phone').val();
-                                                                                password = $('#form_password').val();
-                                                                                gender = $('#form_gender').val();
-                                                                                message = $('#form_message').val();
-
-                                                                                warning = "";
-
-                                                                                if (name == "")
-                                                                                    warning += "name required";
-                                                                                else if (isim.length < 3) {
-                                                                                    warning += "less then 3 letter!";
-
-                                                                                    if (email == "")
-                                                                                        warning += "email required";
-                                                                                    if (phone == "")
-                                                                                        warning += "phone required";
-                                                                                    if (sifre == "")
-                                                                                        warning += "password required";
-                                                                                    else if (sifre.length < 4) {
-                                                                                        warning += "min long 4";
-                                                                                    }
-                                                                                    if (gender == "")
-                                                                                        warning += "gender required";
-                                                                                    if (message == "")
-                                                                                        warning += "message required";
-
-
-                                                                                    $('.uyari').text(warning);
-
-                                                                                }
-    </script>
-
-
-
-
+    <script src="https://kit.fontawesome.com/77b7d0f569.js" crossorigin="anonymous"></script>
 </head>
 
 <navbar>
@@ -245,90 +182,119 @@
 
                         <h3 class=" pt-3 ">Fill The Form Below </h3>
 
-                        <form id=" contact-form " method=" post " action=" contact.php " role=" form ">
+                        <form id="form " class="form">
 
                             <div class=" messages "></div>
 
                             <div class=" controls ">
 
                                 <div class=" row ">
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_name "></label>
-                                            <input id=" form_name " type=" text " name=" name " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Name " required=" required " data-error=" Name is required. ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--name------------------------------------------------->
+                                        <div class=" form-control success ">
+                                            <input id=" fullname " type=" text " name=" name " class="" placeholder=" Name* ">
+                                            <small>Please enter your name</small>
                                         </div>
                                     </div>
+
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_email "></label>
-                                            <input id=" form_email " type=" email " name=" email " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" E-mail " required=" required " data-error=" Valid E-mail is required. ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--email------------------------------------------------->
+                                        <div class=" form-control error">
+                                            <input id=" email " type=" email " name=" email " class="" placeholder=" E-mail* ">
+                                            <small>Please enter valid email</small>
                                         </div>
                                     </div>
+
+
                                 </div>
+
+
                                 <div class=" row ">
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_phone "></label>
-                                            <input id=" form_phone " type=" tel " name=" tel " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Phone Number " required=" required " data-error=" Phone number is required. ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--phone------------------------------------------------->
+                                        <div class=" form-control ">
+                                            <input id="phone " type=" tel " name=" tel " class="" placeholder=" Phone Number* ">
+                                            <small>Please enter valid phone number</small>
                                         </div>
                                     </div>
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_website "></label>
-                                            <input id=" form_website " type=" url " name=" url " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Your Website ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--website------------------------------------------------->
+                                        <div class=" form-control ">
+                                            <input id="website " type=" url " name=" url " class="" placeholder=" Your Website ">
                                         </div>
                                     </div>
+
+
                                 </div>
+
+
                                 <div class=" row ">
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_password "></label>
-                                            <input id=" form_password " type=" password " name=" Password " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Password " required=" required " data-error=" Phone number is required. ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--password------------------------------------------------->
+                                        <div class=" form-control ">
+                                            <input id="password " type=" password " name=" Password " class="" placeholder=" Password* ">
+                                            <small>Please enter valid password</small>
                                         </div>
                                     </div>
+
+
                                     <div class=" col-md-6 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_gender "></label>
-                                            <input id=" form_gender " type=" text " name=" url " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Gender ">
-                                            <div class=" help-block with-errors "></div>
+                                        <!--gender------------------------------------------------->
+                                        <div class=" form-control ">
+                                            <input id=" gender " type=" text " name=" url " class="" placeholder=" Gender ">
                                         </div>
                                     </div>
+
+
                                 </div>
+
+
                                 <div class=" row ">
+
+
                                     <div class=" col-md-12 ">
-                                        <div class=" form-group ">
-                                            <label for=" form_message "></label>
-                                            <textarea id=" form_message " name=" message " class=" form-control bg-grey border-0 form-control-sm p-3 " placeholder=" Your Message " rows=" 4 " required=" required " data-error=" Please,leave us a message. "></textarea>
-                                            <div class=" help-block with-errors "></div>
+                                        <!--message------------------------------------------------->
+                                        <div class=" form-control ">
+                                            <textarea id=" message " name=" message " class=" form-control bg-grey" placeholder=" Your Message* " rows=" 4 "></textarea>
+                                            <small>Please leave a message</small>
                                         </div>
                                     </div>
+
+
                                     <div class=" col-md-12 ">
-                                        <input type=" button " id="submit" class=" btn btn-gradiental btn-send rounded-pill text-white p-3 mt-4 border-0 " value=" Submit Now ">
+                                        <!--button------------------------------------------------->
+                                        <input type="submit" value="Submit now" class="btn-gradiental rounded-pill text-white p-3 mt-4">
                                     </div>
+
+
                                 </div>
                             </div>
-
-                            <div class="warning" style="color:red;">
-                            </div>
-
-                        </form>
 
                     </div>
 
-
+                    </form>
 
                 </div>
 
-                <!----------------------Contact Form End---------------------------->
+
 
             </div>
 
+            <!----------------------Contact Form End---------------------------->
+
         </div>
+
+    </div>
 
 
 
@@ -352,6 +318,8 @@
 
     </div>
     <!----------------------Map End---------------------------->
+
+    <script src="/js/style.js"></script>
 
 </body>
 
