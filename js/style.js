@@ -5,11 +5,13 @@ const phone = document.getElementById('phone');
 const website = document.getElementById('website');
 const password = document.getElementById('password');
 const message = document.getElementById('message');
+var control = 0;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    control = 0;
     checkInputs();
+
 });
 
 function checkInputs() {
@@ -66,8 +68,22 @@ function checkInputs() {
         setSuccessFor(message, 'successful')
     }
 
-    if (!isWebsite(websiteValue)) {
-        setErrorFor(website, 'example: https://www.example.com');
+    if (control == 0) {
+
+        Swal.fire({
+            title: 'Successful',
+            text: 'Do you want to continue',
+            icon: 'success',
+            confirmButtonText: 'Cool',
+            showConfirmButton: true,
+            timer: 1500
+        })
+    }
+
+    if (websiteValue === '') {
+        setSuccessFor(website, 'example: https://www.example.com')
+    } else if (!isWebsite(websiteValue)) {
+        setErrorFor(website, 'Website invalid');
     }
 
 
@@ -84,6 +100,9 @@ function setErrorFor(input, message) {
 
     //add error class
     formControl.className = 'form-control';
+
+    control = 1;
+
 }
 
 function setSuccessFor(input, message) {
@@ -95,6 +114,7 @@ function setSuccessFor(input, message) {
 
     //add success class
     formControl.className = 'form-control';
+
 }
 
 function isEmail(email) {
@@ -106,9 +126,19 @@ function isPhone(phone) {
 }
 
 function isWebsite(website) {
-    return /^?(www\.)?[a-z0-9-]+\.(com|org)(\.[a-z]{2,3})?$/.test(website);
+    return /^[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/.test(website);
 }
 
 function isPassword(password) {
-    return /^[a-z0-9-]+\.(?:com|org)(?:\.[a-z]{2,3})?$/.test(password);
+    return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
+}
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
