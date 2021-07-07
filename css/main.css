@@ -1,3 +1,238 @@
 html {
     overflow-x: hidden;
 }
+
+.topnav {
+    background-color: #1b47ad;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to right, rgba(13, 48, 129), rgba(69, 135, 226, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, rgb(13, 48, 129), rgba(69, 135, 226, 1));
+    height: 65px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.topnav>ul {
+    background-color: transparent;
+    color: #f6f7f9;
+    font-size: 10px;
+    font-family: 'sans-serif';
+}
+
+.topnav>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.topnav>ul>li:hover {
+    background-color: #f6f7f921;
+}
+
+ul.sub-menu {
+    position: absolute;
+    background-color: #f6f7f9;
+    border-radius: 0rem 0rem 0.2rem 0.2rem;
+    list-style-type: none;
+    width: 250px;
+    padding-left: 0px;
+    margin-left: -25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+ul.sub-menu li {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.topnav li:hover .sub-menu {
+    opacity: 1;
+}
+
+.topnav>ul>li a {
+    text-decoration: none;
+}
+
+.topnav>ul>li i {
+    color: white;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topbar-area {
+    padding-top: 20px;
+}
+
+.topbar-area .rs-contact-info .contact-part {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+}
+
+.topbar-area .rs-contact-info .contact-part i {
+    float: left;
+    margin-right: 15px;
+    line-height: 44px;
+}
+
+.topbar-area .rs-contact-info .contact-part i:before {
+    font-size: 26px;
+    color: #106eea;
+}
+
+.topbar-area .rs-contact-info .contact-part .contact-info {
+    float: left;
+    text-align: left;
+    display: block;
+}
+
+.topbar-area .rs-contact-info .contact-part .contact-info span {
+    color: #0a0a0a;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.topbar-area .rs-contact-info .contact-part .contact-info a {
+    color: #454545;
+    font-size: 14px;
+}
+
+.topbar-area .rs-contact-info .contact-part .contact-info a:hover {
+    color: #106eea;
+}
+
+.topbar-area.style2 {
+    background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.topbar-area.style2 .topbar-contact li {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.topbar-area.style2 .topbar-contact li i {
+    margin-right: 5px;
+}
+
+.topbar-area.style2 .topbar-contact li i:before {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.topbar-area.style2 .topbar-contact li a {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #2a8af5;
+}
+
+.topbar-area.style2 .topbar-contact li a:hover {
+    color: #ccc;
+}
+
+.topbar-area.style2 .topbar-contact li:last-child {
+    margin: 0;
+    border: none;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul .opening {
+    color: #ffffff;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul .opening em {
+    border-right: 1px solid #2a8af5;
+    margin-right: 5px;
+    padding-right: 20px;
+    font-style: normal;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul .opening em i {
+    margin-right: 8px;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul .opening em i:before {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 50px;
+    margin-right: 12px;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul li a:hover {
+    color: #ccc;
+}
+
+.topbar-area.style2 .toolbar-sl-share ul li:last-child {
+    margin: 0;
+}
+
+.topbar-area.style2.modify1 {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.topbar-area.style2.modify1 .topbar-contact li {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.topbar-area.style2.modify1 .topbar-contact li a {
+    border-right: unset;
+}
+
+.topbar-area.style2.modify1 .topbar-contact li:last-child {
+    margin: 0;
+    border: none;
+}
+
+.topbar-area.style2.modify1 .toolbar-sl-share ul .opening {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.topbar-area.style2.modify1 .toolbar-sl-share ul .opening em {
+    border-right: unset;
+}
+
+.topbar-area .logo-part img {
+    transition: 0.4s;
+    max-height: 35px;
+}
+
+.topbar-area .logo-part .dark {
+    display: none;
+}
+
+.topbar-area .logo-part .light {
+    display: inherit;
+}
